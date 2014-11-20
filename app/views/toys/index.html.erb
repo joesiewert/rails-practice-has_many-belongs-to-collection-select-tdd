@@ -8,8 +8,8 @@
 <table class="table">
   <thead>
     <tr>
-      <th> Toy Name </th>
-      <th> Cat </th>
+      <th>Toy Name</th>
+      <th>Cat</th>
     </tr>
   </thead>
   <tbody>
@@ -19,7 +19,7 @@
           <%= link_to toy.name, toy_path(toy) %>
         </td>
         <td>
-          <em>Replace this with a link to the cat who owns this toy</em>
+          <%= link_to toy.cat.name, cat_path(toy.cat_id) %>
         </td>
       </tr>
     <% end %>
